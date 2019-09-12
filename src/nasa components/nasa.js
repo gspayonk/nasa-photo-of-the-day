@@ -5,6 +5,7 @@ import axios from 'axios';
 import NasaCard from './nasacard'; 
 
 function NasaPOD(){
+
     const [nasa, setImg] = useState ([]);
 
     useEffect(() => {
@@ -14,7 +15,7 @@ function NasaPOD(){
 
         .then(response => {
             const nasa = response.data;
-            console.log('POD', nasa);
+            console.log('POTD', nasa);
             setImg(nasa);
         })
 
@@ -29,6 +30,7 @@ return (
 
     <div className='photoContainer'> 
         <NasaCard 
+        copyright={nasa.copyright}
         info={nasa.title}
         url={nasa.url}
         date={nasa.date}
