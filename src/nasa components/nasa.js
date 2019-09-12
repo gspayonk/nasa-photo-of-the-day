@@ -3,7 +3,17 @@ import {useState} from 'react';
 import {useEffect} from 'react';
 import axios from 'axios';
 import NasaCard from './nasacard'; 
+import styled from 'styled-components';
 
+//styling area where information is received
+const InfoSection = styled.div `
+    background-color: #f8f8f8;
+    padding: 5%;
+    border-radius: 20px;
+`;
+
+
+//setting up axios/api 
 function NasaPOD(){
 
     const [nasa, setImg] = useState ([]);
@@ -26,9 +36,10 @@ function NasaPOD(){
 
     console.log(nasa);
 
+//information taken from data
 return (
 
-    <div className='photoContainer'> 
+    <InfoSection> 
         <NasaCard 
         copyright={nasa.copyright}
         info={nasa.title}
@@ -36,7 +47,8 @@ return (
         date={nasa.date}
         explanation={nasa.explanation}
         />
-    </div>
+    </InfoSection>
     )
 }
+
 export default NasaPOD;
