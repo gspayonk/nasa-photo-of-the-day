@@ -7,9 +7,12 @@ import styled from 'styled-components';
 
 //styling area where information is received
 const InfoSection = styled.div `
-    background-color: #f8f8f8;
-    padding: 5%;
+    border: 2px solid #f8f8f8;
+    padding: 3%;
     border-radius: 20px;
+    margin-top: 2%;
+    margin-left: 8%;
+    width: 80%;
 `;
 
 

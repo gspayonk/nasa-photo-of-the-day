@@ -16,11 +16,24 @@ const HeaderOne = styled.h1`
   color: white;
 `;
 
-//header div
-const TopHeader = styled.header`
-  color: red;
+//video div
+// const TopVideo = styled.video`
+//   var vid = document.getElementById('moonloop');
+//   vid.loop = true; 
+// `;
 
+//body div component
+const BodyDiv = styled.body`
+background-color:#002f47
 `;
+
+//footer section
+const FooterSection = styled.footer`
+background-color:#002f47
+color: white;
+font-size: 1.5 rem;
+`;
+
 
 
 
@@ -29,16 +42,18 @@ function App() {
 
   return (
 
-    <WrapperDiv>
+    <BodyDiv>
+      <WrapperDiv>
 
-      <TopHeader>
         <HeaderOne>Space Exploration</HeaderOne>
-      </TopHeader>
-    
+        {/* <TopVideo><video source src='../img/moonloop.mov' type='video/mp4'/></TopVideo> */}
       
-      <NasaPod/>
+          <NasaPod/>
       
-    </WrapperDiv>
+      </WrapperDiv>
+      <FooterSection>Gris Edited This</FooterSection>
+
+    </BodyDiv>
   );
 }
 
