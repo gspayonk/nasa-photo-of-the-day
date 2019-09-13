@@ -10,16 +10,20 @@ const HeaderTwo = styled.h2 `
 
 //styling text section
 const textBox = styled.p `
-border: 1px solid #003b59;
+    color: white;
+    font-size: 4rem;
 `;
 
 //explanation section
 const HeaderThree = styled.h3 `
     color: white;
-    border-bottom: 
     font-size: 2rem;
 `;
 
+const SecFooter = styled.footer `
+    color: grey;
+    font-size: 1.5rem;
+`;
 
 
 const NasaCard = props => {
@@ -31,7 +35,7 @@ const NasaCard = props => {
             <img src = {props.url} alt='space picture'/>
             <textBox>{props.date}</textBox>
             <HeaderThree>{props.explanation}</HeaderThree>
-            <footer>{props.copyright}</footer>
+            <SecFooter>{props.copyright}</SecFooter>
         </div>
     );
 };

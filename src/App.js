@@ -24,7 +24,9 @@ const HeaderOne = styled.h1`
 
 //body div component
 const BodyDiv = styled.body`
-background-color:#002f47
+// background-color:#002f47
+  background-image: url('.src/space 2.jpg');
+  background-size: cover;
 `;
 
 //footer section
@@ -33,8 +35,6 @@ background-color:#002f47
 color: white;
 font-size: 1.5 rem;
 `;
-
-
 
 
 //actual app
